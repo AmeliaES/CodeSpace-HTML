@@ -1,3 +1,4 @@
-node_modules/
+node_modules/bootswatch/dist/*
+!node_modules/bootswatch/dist/lux/
 package-lock.json
 package.json
