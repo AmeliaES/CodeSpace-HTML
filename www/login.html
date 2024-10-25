@@ -19,6 +19,27 @@
         .then(res => res.text())
         .then(html => document.getElementById('navbar').innerHTML = html)
         .catch(err => console.error('Navbar load error:', err));
-    </script>  
+    </script> 
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <h2 class="text-center mt-5">Login</h2>
+              <form id="loginForm">
+                  <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="loginEmail" required placeholder="Enter email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" required placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Login</button>
+                  <div class="text-center mt-3">
+                      <span>Don't have an account? <a href="reg.html">Register here</a></span>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
 	</body>
 </html>
